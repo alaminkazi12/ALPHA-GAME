@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,8 +8,59 @@
       rel="stylesheet"
       type="text/css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
+
     <title>ALPHA GAME</title>
+
+    <!-- font style  -->
+    <style>
+      .poppins-regular {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+    </style>
   </head>
-  <body></body>
+  <body class="">
+    <main
+      class="bg-[#1E1E1E] min-h-screen bg-[url('/images/bg.png')] bg-no-repeat bg-center"
+    >
+      <!-- home section -->
+      <section
+        class="text-white flex justify-center items-center text-center min-h-screen hidden"
+        id="home"
+      >
+        <div class="space-y-4">
+          <h1 class="text-8xl font-bold poppins-regular">ALPHA CLASH</h1>
+          <p class="poppins-regular">
+            Unleash Your Keyboard Kung Fu: Press "Enter" to play
+          </p>
+          <button
+            class="bg-white text-black px-4 py-2 rounded-sm poppins-regular"
+          >
+            Play Now
+          </button>
+        </div>
+      </section>
+      <!-- Playground section -->
+      <section
+        id="playground-section"
+        class="flex justify-center items-center min-h-screen"
+      >
+        <div
+          class="artboard artboard-horizontal phone-5 bg-gray-400 border-8 border-black rounded-md"
+        >
+          <p class="text-white bg-black">Don't watch Keyboard while playing</p>
+          <h2 class="text-8xl">Y</h2>
+        </div>
+      </section>
+      <section></section>
+    </main>
+  </body>
 </html>
